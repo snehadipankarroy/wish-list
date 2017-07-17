@@ -1,0 +1,29 @@
+#search-component {
+  clear: both;
+  display: block;
+}
+h3{
+  margin-left: 15px;
+}
+.search-result{
+  margin-left: 15px;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  width:250px;
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.search-result:hover {
+  color: #eee;
+  background-color: #ff1963;
+}
+
+#search-box{
+  margin-left: 15px;
+  width: 250px;
+  height: 25px;
+}

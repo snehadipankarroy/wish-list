@@ -1,0 +1,25 @@
+<h2>My wishes</h2>
+<form class="form-inline">
+  <div class="form-group">
+    <input #wishText class="form-control" placeholder="type new wish here...">
+    <button (click)="add(wishText.value); wishText.value=''" class="btn">
+      Add
+    </button>
+  </div>
+</form>
+<ul class="wishes">
+  <li *ngFor="let wish of wishes"
+    [class.selected]="wish === selectedWish"
+    (click)="onSelect(wish)">
+    <span class="serial">{{wish.id}}</span>
+    <span>{{wish.text}}</span>
+    <button class="delete"
+      (click)="delete(wish); $event.stopPropagation">X</button>
+  </li>
+</ul>
+<div *ngIf="selectedWish">
+  <h2>
+    {{selectedWish.text | uppercase}} is my wish
+  </h2>
+  <button class="btn" (click)='gotoDetail()'>View Details</button>
+</div>

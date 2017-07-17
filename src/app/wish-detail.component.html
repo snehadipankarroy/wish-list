@@ -1,0 +1,10 @@
+<div *ngIf="wish">
+  <h2>{{wish.text}}</h2>
+  <div><label>ID: </label>{{wish.id}}</div>
+  <div>
+    <label>Wish: </label>
+    <input [(ngModel)]="wish.text" placeholder="type your wish here.." />
+  </div>
+  <button class="btn" (click)="goBack()">Back</button>
+  <button class="btn" (click)="save()">Save</button>
+</div>

@@ -1,0 +1,9 @@
+<h2>Top Wishes</h2>
+<div class='grid grid-pad'>
+  <a *ngFor="let wish of wishes" [routerLink]="['/detail', wish.id]" class="col-1-4">
+    <div class="module wish">
+      <h4>{{wish.text}}</h4>
+    </div>
+  </a>
+</div>
+<wish-search></wish-search>

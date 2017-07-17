@@ -1,0 +1,27 @@
+label {
+  display: inline-block;
+  width: 6em;
+  margin: .5em 0;
+  color: #808080;
+  font-style: italic;
+  font-family: Verdana, Geneva, sans-serif;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  margin-bottom: 1.6em;
+}
+button {
+  color: #000;
+  background-color: #DDD;
+}
+button:hover {
+  color: #000;
+  background-color: #a9a9a9;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}

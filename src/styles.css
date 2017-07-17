@@ -1,0 +1,21 @@
+/* Master Styles */
+h1 {
+  color: #ff1963;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #ff1963;
+  font-family: Verdana, Geneva, sans-serif;
+}
+body {
+  margin: 2em;
+}
+body, input[text] {
+  color: #888;
+  font-family: Verdana, Geneva, sans-serif;
+}
+/* everywhere else */
+* {
+  font-family: Verdana, Geneva, sans-serif;
+}

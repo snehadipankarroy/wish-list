@@ -1,0 +1,10 @@
+<div id="search-component">
+  <h3>Wish Search</h3>
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="type keyword here..." />
+  <div>
+    <div *ngFor="let wish of wishes | async"
+          (click)="gotoDetail(wish)" class="search-result">
+        {{wish.text}}
+    </div>
+  </div>
+</div>
